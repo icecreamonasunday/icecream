@@ -1,0 +1,61 @@
+@import "neat";
+
+body {
+  background-color: #fff;
+  color: #444;
+  font-family: 'Catamaran', sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+h1 {
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color:#f1c800;
+  padding: 0px 30px;
+  h3 {
+    flex: 1 0 0;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex: 2 0 0;
+    align-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  li {
+    padding: 0px 10px;
+  }
+}
+
+.hero {
+  background-color: #f7d525;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 15px;
+  color: #999;
+}
