@@ -15,20 +15,36 @@
   </head>
   <body class="<%= page_classes %>">
     <div class="nav">
-      <% link_to 'http://www.icecreamonasunday.com' do %>
-        <%= tag :img, :src => '/images/blog_title.svg', :class => "logo" %>
-      <% end %>
-      <ul>
-        <li><%= link_to 'Home', '/index.html', :relative => true %></li>
-        <li><%= link_to 'Recipes', '/recipes.html', :relative => true %></li>
-        <li><%= link_to 'About', '/about.html', :relative => true %></li>
-      </ul>
+      <div class="container">
+        <% link_to 'http://www.icecreamonasunday.com' do %>
+          <%= tag :img, :src => '/images/blog_title.svg', :class => "logo" %>
+        <% end %>
+        <ul>
+          <li><%= link_to 'Home', '/index.html', :relative => true %></li>
+          <li><%= link_to 'Recipes', '/recipes.html', :relative => true %></li>
+          <li><%= link_to 'About', '/about.html', :relative => true %></li>
+        </ul>
+      </div>
     </div>
     <div id="main">
       <%= yield %>
     </div>
     <div class="footer">
-      <p>Made by me.</p>
+      <div class="container">
+        <div class="first-row">
+          <div class="links">
+            <%= link_to 'Home', '/index.html', :relative => true %>
+            <%= link_to 'Recipes', '/recipes.html', :relative => true %>
+            <%= link_to 'About', '/about.html', :relative => true %>
+          </div>
+          <div class="social-media">
+            Some social media stuff
+          </div>
+        </div>
+        <div class="second-row">
+          <p class="small">© Vendela Larsson 2017</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

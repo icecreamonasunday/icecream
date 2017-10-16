@@ -1,23 +1,40 @@
 .jumbo-feature {
-  height: 500px;
+  height: 600px;
 
-  .left {
-      @include grid-column(6 of 12);
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-  }
+  .container {
+    height: inherit;
 
-  .right {
-      @include grid-column(6 of 12);
-      height: 100%;
-      display: flex;
-      align-items: center;
+    .left, .right {
+        @include grid-column(6 of 12);
+        display: flex;
+    }
+
+    .left {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .right {
+        @include grid-column(6 of 12);
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
   }
 
 }
 
 .featured-flavors {
   background: url('../../images/linedpaper.png');
-  padding: 50px;
+  width: 100%;
+
+  .container {
+    padding: 50px;
+    text-align: center;
+    height: 500px;
+
+    .flavor {
+      @include grid-column(4 of 12);
+    }
+  }
 }

@@ -35,3 +35,20 @@ window.onload = shrinkHeader();
 
 // for every 10 pixels that i scroll (distanceY), make the paddingoffset 1px,
 // as long as the distance i scroll is under 150px
+
+
+
+$(document).ready(function() {
+    $(".fadeIn").each(function() {
+        var src = $(this).data("src");
+        if (src) {
+            var img = new Image();
+            img.style.display = "none";
+            img.onload = function() {
+                $(this).fadeIn(1000);
+            };
+            $(this).append(img);
+            img.src = src;
+        }
+    });
+});

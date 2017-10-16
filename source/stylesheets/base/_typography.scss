@@ -19,6 +19,14 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
+
+  &.small {
+    font-size: 80%;
+  }
+
+  &.muted {
+    opacity: 0.5;
+  }
 }
 
 a {
@@ -38,10 +46,30 @@ a {
   padding: 3px 20px;
 }
 
+.link-medium {
+  color: $blue;
+  background: url('../../images/link-background-medium.svg') no-repeat center center;
+  background-size: contain;
+  padding: 3px 20px;
+  &:hover {
+    a {
+      color: $white;
+    }
+    background: url('../../images/link-background-medium-hover.svg') no-repeat center center;
+  }
+}
+
 hr {
   border-bottom: $base-border;
   border-left: 0;
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
+}
+
+time {
+  font-size: 80%;
+  font-weight: 200;
+  letter-spacing: .75px;
+  text-transform: uppercase;
 }
