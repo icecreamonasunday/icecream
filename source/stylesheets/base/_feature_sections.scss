@@ -1,0 +1,23 @@
+.jumbo-feature {
+  height: 500px;
+
+  .left {
+      @include grid-column(6 of 12);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+  }
+
+  .right {
+      @include grid-column(6 of 12);
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+}
+
+.featured-flavors {
+  background: url('../../images/linedpaper.png');
+  padding: 50px;
+}

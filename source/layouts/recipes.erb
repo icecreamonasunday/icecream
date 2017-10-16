@@ -1,0 +1,4 @@
+<% wrap_layout :layout do %>
+  <%= yield %>
+  <%= tag :img, :src => current_page.data.illustration_tag, :class => 'recipe-illustration' %>
+<% end %>

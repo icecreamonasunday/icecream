@@ -1,13 +1,68 @@
 ---
-title: Ice Cream on a Sunday
+pageable: true
+per_page: 10
 ---
 
-<% content_tag :div, :class => "hero" do %>
-  <h1>Home page</h1>
-<% end %>
+<div class="jumbo-feature">
+  <% blog.articles[0...1].each do |article| %>
+    <div class="left">
+      <img src="<%= article.data.illustration_tag %>" />
+    </div>
+    <div class="right">
+      <article>
+        <img src="images/illustrations/rubber-spatula.png" />
+        <h1>
+          <%= article.title %>
+        </h1>
+        <p><time><%= article.date.strftime('%b %e %Y') %></time></p>
 
-<%= link_to(
-  "Read Documentation",
-  "https://middlemanapp.com/basics/templating_language/",
-  target: "_blank"
-) %>
+        <%= article.summary %>
+
+        <div class="link-light"><a href="<%= article.url %>">Get Recipe and Read more</a></div>
+      </article>
+    </div>
+  <% end %>
+</div>
+
+<div class="featured-flavors">
+  <% blog.articles[0...3].each do |article| %>
+    <div class="left">
+      <img src="<%= article.data.illustration_tag %>" />
+    </div>
+    <div class="right">
+      <article>
+        <h1>
+          <%= article.title %>
+        </h1>
+        <p><time><%= article.date.strftime('%b %e %Y') %></time></p>
+
+        <%= article.summary %>
+
+        <div class="link-light"><a href="<%= article.url %>">Get Recipe and Read more</a></div>
+      </article>
+    </div>
+  <% end %>
+</div>
+
+<div class="">
+  <% if paginate && num_pages > 1 %>
+    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+    <% if prev_page %>
+      <p><%= link_to 'Previous page', prev_page %></p>
+    <% end %>
+  <% end %>
+
+  <% page_articles.each_with_index do |article, i| %>
+    <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+    <!-- use article.summary(250) if you have Nokogiri available to show just
+         the first 250 characters -->
+    <%= article.body %>
+  <% end %>
+
+  <% if paginate %>
+    <% if next_page %>
+      <p><%= link_to 'Next page', next_page %></p>
+    <% end %>
+  <% end %>
+</div>
