@@ -1,6 +1,6 @@
 ---
 pageable: true
-per_page: 10
+per_page: 4
 ---
 
 <div class="jumbo-feature">
@@ -15,11 +15,11 @@ per_page: 10
           <h1>
             <%= article.title %>
           </h1>
-          <p><time><%= article.date.strftime('%b %e %Y') %></time></p>
+          <time><%= article.date.strftime('%b %e, %Y') %></time>
 
           <%= article.summary %>
 
-          <div class="link-light"><a href="<%= article.url %>">Get Recipe and Read more</a></div>
+          <a class="link-light" href="<%= article.url %>">Get Recipe and Read more</a>
         </article>
       </div>
     <% end %>
@@ -29,43 +29,49 @@ per_page: 10
 <div class="featured-flavors">
   <div class="container">
     <h2>Featured Flavors</h2>
-    <% blog.articles[0...3].each do |article| %>
-      <div class="flavor">
-        <img src="<%= article.data.ingredients_tag %>" class="fadeIn" />
-        <article>
-          <h1>
-            <%= article.title %>
-          </h1>
-          <p><time><%= article.date.strftime('%b %e %Y') %></time></p>
+    <div class="flavors">
+      <% blog.articles[0...3].each do |article| %>
+        <div class="flavor">
+          <img src="<%= article.data.ingredients_tag %>" class="fadeIn" />
+          <article>
+            <h1>
+              <%= article.title %>
+            </h1>
 
-          <div class="link-medium"><a href="<%= article.url %>">Get Recipe</a></div>
-        </article>
-      </div>
-    <% end %>
+            <a class="link-medium" href="<%= article.url %>">Get Recipe</a>
+          </article>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 
-<div class="hi">
+<div class="latest-posts">
   <div class="container">
-    <% if paginate && num_pages > 1 %>
-      <p>Page <%= page_number %> of <%= num_pages %></p>
+    <h2>Latest Posts</h2>
+    <div class="posts">
+      <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
 
-      <% if prev_page %>
-        <p><%= link_to 'Previous page', prev_page %></p>
+        <% if prev_page %>
+          <%= link_to 'Previous page', prev_page %>
+        <% end %>
       <% end %>
-    <% end %>
 
-    <% page_articles.each_with_index do |article, i| %>
-      <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-      <!-- use article.summary(250) if you have Nokogiri available to show just
-           the first 250 characters -->
-      <%= article.body %>
-    <% end %>
-
-    <% if paginate %>
-      <% if next_page %>
-        <p><%= link_to 'Next page', next_page %></p>
+      <% page_articles.each_with_index do |article, i| %>
+        <div class="post">
+          <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
+          <h2><%= article.title %> </h2>
+          <time><%= article.date.strftime('%b %e, %Y') %></time>
+          <a class="link-light-small" href="<%= article.url %>">Read More</a>
+        </div>
       <% end %>
-    <% end %>
+
+      <% if paginate %>
+        <% if next_page %>
+          <%= link_to 'Next page', next_page %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

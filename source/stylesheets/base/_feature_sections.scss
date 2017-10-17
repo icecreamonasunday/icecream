@@ -4,37 +4,62 @@
   .container {
     height: inherit;
 
-    .left, .right {
-        @include grid-column(6 of 12);
-        display: flex;
+    .left,
+    .right {
+      @include grid-column(6 of 12);
+      display: flex;
     }
 
     .left {
-        justify-content: center;
-        align-items: flex-end;
+      align-items: flex-end;
+      justify-content: center;
     }
 
     .right {
-        @include grid-column(6 of 12);
-        height: 100%;
-        display: flex;
-        align-items: center;
+      @include grid-column(6 of 12);
+      align-items: center;
+      display: flex;
+      height: 100%;
     }
   }
-
 }
 
 .featured-flavors {
-  background: url('../../images/linedpaper.png');
-  width: 100%;
+  background: url("../../images/linedpaper.png");
 
   .container {
+    height: 500px;
     padding: 50px;
     text-align: center;
-    height: 500px;
 
-    .flavor {
-      @include grid-column(4 of 12);
+    .flavors {
+      align-items: flex-end;
+      display: flex;
+
+      .flavor {
+        @include grid-column(4 of 12);
+      }
+    }
+  }
+}
+
+.latest-posts {
+  .container {
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+
+    .posts {
+      align-items: flex-end;
+      display: flex;
+
+      .post {
+        @include grid-column(3 of 12);
+
+        img {
+          height: 220px;
+        }
+      }
     }
   }
 }

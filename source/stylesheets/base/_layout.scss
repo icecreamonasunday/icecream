@@ -14,38 +14,36 @@ body {
 }
 
 body {
-  position: relative;
+  background: url("../images/hip-square.png");
   background-color: #fff;
   color: #444;
-  font-family: 'Fira Sans', sans-serif;
-  margin: 0 auto;
-  background: url('../images/hip-square.png');
-  // height: 2000px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  position: relative;
 }
 
 .container {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 #main {
-   margin-top: 225px;
-   margin-bottom: 100px;
-   flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-bottom: 100px;
+  margin-top: 225px;
 }
 
 .footer {
-  flex-shrink: 0;
   background-color: black;
+  color: $white;
+  flex-shrink: 0;
   padding: 40px 30px;
   width: 100%;
-  color: $white;
 
   .first-row {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
   }
 

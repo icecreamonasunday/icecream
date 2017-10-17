@@ -39,24 +39,42 @@ a {
   }
 }
 
-.link-light {
-  color: $blue;
-  background: url('../../images/link-background-light.svg') no-repeat center left;
+@mixin generate-link($color, $img-url, $position, $img-url-hover) {
+  background: url($img-url) no-repeat $position;
   background-size: contain;
-  padding: 3px 20px;
-}
-
-.link-medium {
-  color: $blue;
-  background: url('../../images/link-background-medium.svg') no-repeat center center;
-  background-size: contain;
+  color: $color;
+  display: block;
   padding: 3px 20px;
   &:hover {
+    background: url($img-url-hover) no-repeat center;
     a {
       color: $white;
     }
-    background: url('../../images/link-background-medium-hover.svg') no-repeat center center;
   }
+}
+
+.link-light {
+  @include generate-link(
+  $blue,
+  "../../images/link-background-light.svg",
+  center left,
+  "../../images/link-background-medium-hover.svg");
+}
+
+.link-medium {
+  @include generate-link(
+  $blue,
+  "../../images/link-background-medium.svg",
+  center,
+  "../../images/link-background-medium-hover.svg");
+}
+
+.link-light-small {
+  @include generate-link(
+  $blue,
+  "../../images/link-background-light-small.svg",
+  center,
+  "../../images/link-background-medium-hover.svg");
 }
 
 hr {
@@ -68,8 +86,9 @@ hr {
 }
 
 time {
+  display: block;
   font-size: 80%;
   font-weight: 200;
-  letter-spacing: .75px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
