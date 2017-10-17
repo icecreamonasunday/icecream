@@ -3,18 +3,18 @@ figure {
 }
 
 .jumbo-feature {
-    img {
-        height: 645px;
-        margin-top: -50px;
-        z-index: 999;
-    }
-    article img {
-        height: 100px;
-        transform: rotate(75deg);
-        margin-left: -50px;
-    }
+  img {
+    height: 645px;
+    margin-top: -50px;
+    z-index: 999;
+  }
+  article img {
+    height: 100px;
+    margin-left: -50px;
+    transform: rotate(75deg);
+  }
 }
 
 .featured-flavors img {
-    height: 200px;
+  height: 200px;
 }

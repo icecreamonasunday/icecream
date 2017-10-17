@@ -2,31 +2,4 @@
 @import "neat";
 @import "base/base";
 
-.hero {
-  background-color: #f7d525;
-  height: 300px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.recipes_index {
-
-  .entries {
-    display: flex;
-
-    .entry {
-      background-color: blue;
-      height: 300px;
-      width: 300px;
-    }
-
-  }
-
-}
-
-.recipe-illustration {
-  width: 300px;
-}
-
+@import "base/components/_recipes.scss";
