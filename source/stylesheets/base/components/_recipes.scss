@@ -1,0 +1,15 @@
+.recipes_index {
+  .entries {
+    display: flex;
+
+    .entry {
+      background-color: blue;
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+.recipe-illustration {
+  width: 300px;
+}
