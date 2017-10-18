@@ -8,10 +8,11 @@
 }
 
 .jumbo-feature {
-  height: 600px;
+  @include clearfix;
 
   .container {
-    height: inherit;
+    display: flex;
+    justify-content: stretch;
 
     .left,
     .right {
@@ -28,7 +29,6 @@
       @include grid-column(6 of 12);
       align-items: center;
       display: flex;
-      height: 100%;
     }
   }
 }
@@ -47,6 +47,40 @@
 
       .flavor {
         @include grid-column(4 of 12);
+      }
+    }
+  }
+}
+
+.drawn-rule {
+  margin: $base-spacing;
+  text-align: center;
+}
+
+.featured-tip {
+  @include clearfix;
+
+  .container {
+    display: flex;
+    justify-content: stretch;
+    padding: $base-spacing;
+
+    .left {
+      @include grid-column(7 of 12);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .right {
+      @include grid-column(5 of 12);
+      align-items: center;
+      display: flex;
+
+      img {
+        height: 500px;
+        margin-top: -50px;
+        position: absolute;
       }
     }
   }

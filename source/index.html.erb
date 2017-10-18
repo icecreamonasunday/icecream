@@ -5,7 +5,7 @@ per_page: 4
 
 <div class="jumbo-feature">
   <div class="container">
-    <% blog.articles[0...1].each do |article| %>
+    <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...1].each do |article| %>
       <div class="left">
         <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
       </div>
@@ -30,7 +30,7 @@ per_page: 4
   <div class="container">
     <h2>Featured Flavors</h2>
     <div class="flavors">
-      <% blog.articles[0...3].each do |article| %>
+      <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...3].each do |article| %>
         <div class="flavor">
           <img src="<%= article.data.ingredients_tag %>" class="fadeIn" />
           <article>
@@ -44,6 +44,26 @@ per_page: 4
       <% end %>
     </div>
   </div>
+</div>
+
+<div class="featured-tip">
+  <div class="container">
+    <% blog.articles.select{ |article| article.data.category == 'tips' }[0...1].each do |article| %>
+      <div class="left">
+        <h4><%= article.data.pre_title %></h4>
+        <h2><%= article.data.title %></h2>
+        <%= article.summary %>
+        <a class="link-light" href="<%= article.url %>">Get More Tips</a>
+      </div>
+      <div class="right">
+        <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="drawn-rule">
+  <img src="images/drawn-rule.svg" />
 </div>
 
 <div class="latest-posts">
