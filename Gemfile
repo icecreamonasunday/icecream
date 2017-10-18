@@ -27,3 +27,7 @@ gem 'middleman-livereload'
 
 # Article Summaries
 gem 'nokogiri'
+
+# Inline SVG Support
+gem 'inline_svg'
+gem 'middleman-sprockets'

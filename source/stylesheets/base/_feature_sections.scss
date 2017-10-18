@@ -8,27 +8,26 @@
 }
 
 .jumbo-feature {
-  height: 600px;
+  @include clearfix;
 
   .container {
-    height: inherit;
+    display: flex;
 
-    .left,
-    .right {
+    .illustration,
+    .text-and-description {
       @include grid-column(6 of 12);
       display: flex;
     }
 
-    .left {
+    .illustration {
       align-items: flex-end;
       justify-content: center;
     }
 
-    .right {
+    .text-and-description {
       @include grid-column(6 of 12);
       align-items: center;
       display: flex;
-      height: 100%;
     }
   }
 }
@@ -52,6 +51,38 @@
   }
 }
 
+.drawn-rule {
+  margin-top: 100px;
+}
+
+.featured-tip {
+  @include clearfix;
+
+  .container {
+    padding: $base-spacing;
+
+    .title-and-summary {
+      @include grid-column(7 of 12);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .illustration {
+      @include grid-column(5 of 12);
+      align-items: center;
+      display: flex;
+      position: relative;
+    }
+
+    img {
+      height: 500px;
+      position: absolute;
+      top: -110px;
+    }
+  }
+}
+
 .latest-posts {
   .container {
     height: 500px;
@@ -61,13 +92,13 @@
     .posts {
       align-items: flex-end;
       display: flex;
+    }
 
-      .post {
-        @include grid-column(3 of 12);
+    .post {
+      @include grid-column(3 of 12);
 
-        img {
-          height: 220px;
-        }
+      img {
+        height: 220px;
       }
     }
   }
