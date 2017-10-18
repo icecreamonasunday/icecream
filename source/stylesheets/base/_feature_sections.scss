@@ -21,7 +21,7 @@
 
     .illustration {
       align-items: flex-end;
-      justify-content: center;
+      justify-content: flex-end;
     }
 
     .text-and-description {
@@ -29,24 +29,36 @@
       align-items: center;
       display: flex;
     }
+
+    h1 {
+      font-size: 3.1em;
+    }
+
+    time {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .featured-flavors {
-  background: url("../../images/linedpaper.png");
+  @include clearfix;
+  background-color: $white;
 
   .container {
-    height: 500px;
     padding: 50px;
     text-align: center;
 
     .flavors {
       align-items: flex-end;
       display: flex;
+    }
 
-      .flavor {
-        @include grid-column(4 of 12);
-      }
+    .flavor {
+      @include grid-column(4 of 12);
+    }
+
+    .bracket {
+      @include generate-bracket(150px);
     }
   }
 }
@@ -99,6 +111,10 @@
 
       img {
         height: 220px;
+      }
+
+      .bracket {
+        @include generate-bracket(150px);
       }
     }
   }

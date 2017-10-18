@@ -145,6 +145,7 @@ DEPENDENCIES
   middleman-blog
   middleman-livereload
   middleman-sprockets
+  middleman-livereload (~> 3.4.3)
   neat
   nokogiri
   redcarpet (~> 3.3, >= 3.3.3)

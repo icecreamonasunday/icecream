@@ -11,15 +11,14 @@ per_page: 4
       </div>
       <div class="text-and-description">
         <article>
-          <img src="images/illustrations/rubber-spatula.png" />
           <h1>
             <%= article.title %>
           </h1>
-          <time><%= article.date.strftime('%b %e, %Y') %></time>
+          <time><%= article.date.strftime('%B %e, %Y') %></time>
 
           <%= article.summary %>
 
-          <a class="link-light" href="<%= article.url %>">Get Recipe and Read more</a>
+          <a class="button primary top-space" href="<%= article.url %>">Give. Me. The. Recipe.</a>
         </article>
       </div>
     <% end %>
@@ -28,18 +27,19 @@ per_page: 4
 
 <div class="featured-flavors">
   <div class="container">
-    <h2>Featured Flavors</h2>
+    <h2 class="red heading-background">Featured Flavors</h2>
     <div class="flavors">
       <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...3].each do |article| %>
         <div class="flavor">
           <img src="<%= article.data.ingredients_tag %>" class="fadeIn" />
-          <article>
-            <h1>
+          <div class="bracket">
+            <time><%= article.date.strftime('%B %e, %Y') %></time>
+            <h3>
               <%= article.title %>
-            </h1>
+            </h3>
 
-            <a class="link-medium" href="<%= article.url %>">Get Recipe</a>
-          </article>
+            <a class="button secondary" href="<%= article.url %>">Get Recipe</a>
+          </div>
         </div>
       <% end %>
     </div>
@@ -53,7 +53,7 @@ per_page: 4
         <h5><%= article.data.pre_title %></h5>
         <h2><%= article.data.title %></h2>
         <%= article.summary %>
-        <a class="link-light" href="<%= article.url %>">Get More Tips</a>
+        <a class="button top-space" href="<%= article.url %>">Get More Tips</a>
       </div>
       <div class="illustration">
         <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
@@ -65,7 +65,7 @@ per_page: 4
 
 <div class="latest-posts">
   <div class="container">
-    <h2>Latest Posts</h2>
+    <h2 class="red heading-background">Latest Posts</h2>
     <div class="posts">
       <% if paginate && num_pages > 1 %>
         <p>Page <%= page_number %> of <%= num_pages %></p>
@@ -78,9 +78,11 @@ per_page: 4
       <% page_articles.each_with_index do |article, i| %>
         <div class="post">
           <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
-          <h2><%= article.title %> </h2>
-          <time><%= article.date.strftime('%b %e, %Y') %></time>
-          <a class="link-light-small" href="<%= article.url %>">Read More</a>
+          <div class="bracket">
+            <time><%= article.date.strftime('%B %e, %Y') %></time>
+            <h3><%= article.title %> </h3>
+            <a class="button secondary" href="<%= article.url %>">Read More</a>
+          </div>
         </div>
       <% end %>
 

@@ -1,8 +1,8 @@
 .nav {
+  @include clearfix;
   background-color: $white;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-  height: 225px;
-  padding: 30px 30px;
+  // height: 225px;
+  padding: 15px 30px;
   position: fixed;
   top: 0;
   transition: height 0.1s ease;
@@ -12,9 +12,19 @@
   .container {
     display: flex;
     flex-direction: row;
+    position: relative;
 
-    img {
-      transition: height 0.1s ease;
+    .blog-title {
+      color: $red;
+      font-size: 87px;
+      line-height: 80px;
+      margin-bottom: 0.3em;
+      transform: rotate(-8deg);
+      transition: font-size 0.1s ease;
+    }
+
+    .blog-title-first-line {
+      padding-left: 15px;
     }
 
     h3 {
@@ -22,25 +32,32 @@
     }
 
     ul {
-      align-content: space-evenly;
-      align-items: flex-end;
-      background: url("../images/nav_background.svg") no-repeat top right;
+      bottom: 20px;
       display: flex;
-      flex: 2 0 0;
-      justify-content: flex-end;
       list-style: none;
+      position: absolute;
+      right: 0;
     }
 
     li {
       a {
+        border-bottom: 0 solid transparent;
         color: $blue;
         font-weight: 400;
-        padding: 3px 20px;
+        padding-bottom: 36px;
+        padding-left: 20px;
+        padding-right: 20px;
         text-decoration: none;
-        &:hover {
-          background: url("../images/link-background.svg") no-repeat center center;
-          background-size: contain;
-          color: $white;
+        transition: border-bottom $base-duration;
+
+        &:hover,
+        .active {
+          border-bottom: 4px solid $blue;
+          padding-bottom: 36px;
+        }
+
+        .active {
+          font-weight: bold;
         }
       }
     }
