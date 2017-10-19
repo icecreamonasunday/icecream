@@ -14,18 +14,18 @@
     display: flex;
     justify-content: stretch;
 
-    .left,
-    .right {
+    .illustration,
+    .text-and-description {
       @include grid-column(6 of 12);
       display: flex;
     }
 
-    .left {
+    .illustration {
       align-items: flex-end;
       justify-content: center;
     }
 
-    .right {
+    .text-and-description {
       @include grid-column(6 of 12);
       align-items: center;
       display: flex;
@@ -53,35 +53,33 @@
 }
 
 .drawn-rule {
-  margin: $base-spacing;
-  text-align: center;
+  margin-top: 100px;
 }
 
 .featured-tip {
   @include clearfix;
 
   .container {
-    display: flex;
-    justify-content: stretch;
     padding: $base-spacing;
 
-    .left {
+    .title-and-summary {
       @include grid-column(7 of 12);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
     }
 
-    .right {
+    .illustration {
       @include grid-column(5 of 12);
       align-items: center;
       display: flex;
+      position: relative;
+    }
 
-      img {
-        height: 500px;
-        margin-top: -50px;
-        position: absolute;
-      }
+    img {
+      height: 500px;
+      position: absolute;
+      top: -110px;
     }
   }
 }
@@ -95,13 +93,13 @@
     .posts {
       align-items: flex-end;
       display: flex;
+    }
 
-      .post {
-        @include grid-column(3 of 12);
+    .post {
+      @include grid-column(3 of 12);
 
-        img {
-          height: 220px;
-        }
+      img {
+        height: 220px;
       }
     }
   }

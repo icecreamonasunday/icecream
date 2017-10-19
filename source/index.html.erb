@@ -6,10 +6,10 @@ per_page: 4
 <div class="jumbo-feature">
   <div class="container">
     <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...1].each do |article| %>
-      <div class="left">
+      <div class="illustration">
         <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
       </div>
-      <div class="right">
+      <div class="text-and-description">
         <article>
           <img src="images/illustrations/rubber-spatula.png" />
           <h1>
@@ -49,21 +49,20 @@ per_page: 4
 <div class="featured-tip">
   <div class="container">
     <% blog.articles.select{ |article| article.data.category == 'tips' }[0...1].each do |article| %>
-      <div class="left">
-        <h4><%= article.data.pre_title %></h4>
+      <div class="title-and-summary">
+        <h5><%= article.data.pre_title %></h5>
         <h2><%= article.data.title %></h2>
         <%= article.summary %>
         <a class="link-light" href="<%= article.url %>">Get More Tips</a>
       </div>
-      <div class="right">
+      <div class="illustration">
         <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
       </div>
     <% end %>
+    <svg class="drawn-rule" width="900" height="15" viewBox="0 0 900 15">
+      <path fill="none" stroke="#4A4A4A" stroke-linecap="round" d="M215,2017.47659 C343.855136,2024.52078 324.800214,2024.1308 558.59945,2020.19394 C631.18477,2018.9717 703.592125,2011.84079 776.178598,2010.68906 C889.105063,2008.89724 1002.05953,2011.14001 1115,2011.36548" transform="translate(-215 -2009)"/>
+    </svg>
   </div>
-</div>
-
-<div class="drawn-rule">
-  <img src="images/drawn-rule.svg" />
 </div>
 
 <div class="latest-posts">
