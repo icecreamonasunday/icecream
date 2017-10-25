@@ -1,8 +1,7 @@
 .nav {
   @include clearfix;
-  background-color: $white;
-  // height: 225px;
-  padding: 15px 30px;
+  background-color: $red;
+  padding: 15px $small-spacing;
   position: fixed;
   top: 0;
   transition: height 0.1s ease;
@@ -14,52 +13,43 @@
     flex-direction: row;
     position: relative;
 
-    .blog-title {
-      color: $red;
-      font-size: 87px;
-      line-height: 80px;
-      margin-bottom: 0.3em;
-      transform: rotate(-8deg);
-      transition: font-size 0.1s ease;
-    }
-
-    .blog-title-first-line {
-      padding-left: 15px;
-    }
-
     h3 {
       flex: 1 0 0;
     }
 
     ul {
-      bottom: 20px;
+      @include position(absolute, null 0 20px null);
       display: flex;
       list-style: none;
-      position: absolute;
-      right: 0;
     }
 
-    li {
-      a {
-        border-bottom: 0 solid transparent;
-        color: $blue;
-        font-weight: 400;
-        padding-bottom: 36px;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-decoration: none;
-        transition: border-bottom $base-duration;
+    a {
+      @include padding(null 0 $smallest-spacing);
+      border-bottom: 0 solid transparent;
+      color: $white;
+      font-weight: 800;
+      margin: 0 $smallest-spacing;
+      text-decoration: none;
+      transition: border-bottom $base-duration;
 
-        &:hover,
-        .active {
-          border-bottom: 4px solid $blue;
-          padding-bottom: 36px;
-        }
-
-        .active {
-          font-weight: bold;
-        }
+      &:hover,
+      .nav-link-active {
+        border-bottom: $large-border-width solid $white;
+        padding-bottom: $smallest-spacing;
       }
     }
   }
+}
+
+.blog-title {
+  color: $white;
+  font-size: 87px;
+  line-height: 80px;
+  margin-bottom: 0.3em;
+  transform: rotate(-8deg);
+  transition: font-size 0.1s ease;
+}
+
+.blog-title-first-line {
+  padding-left: 15px;
 }

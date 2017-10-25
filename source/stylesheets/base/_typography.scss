@@ -82,10 +82,10 @@ time {
   text-transform: uppercase;
 }
 
-.red {
-  color: $red;
-}
-
 .heading-background {
   background: url("../../images/h2-background.svg") no-repeat center;
+}
+
+.section-header {
+  color: $red;
 }
