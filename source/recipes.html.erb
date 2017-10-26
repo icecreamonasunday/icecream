@@ -5,7 +5,24 @@ title: Ice Cream on a Sunday
 <div class="latest-posts">
   <div class="container">
     <div class="posts">
-      <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...3].each do |article| %>
+      <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...4].each do |article| %>
+        <div class="post">
+          <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
+          <article class="article-link-bracket">
+            <time><%= article.date.strftime('%B %e, %Y') %></time>
+            <h3><%= article.title %> </h3>
+            <a class="button button-secondary" href="<%= article.url %>">Read More</a>
+          </article>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="latest-posts">
+  <div class="container">
+    <div class="posts">
+      <% blog.articles.select{ |article| article.data.category == 'recipes' }[4...8].each do |article| %>
         <div class="post">
           <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
           <article class="article-link-bracket">
