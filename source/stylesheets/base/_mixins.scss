@@ -1,0 +1,15 @@
+@mixin generate-bracket($height) {
+  display: flex;
+  flex-direction: column;
+  height: $height;
+  justify-content: space-between;
+  margin-top: $base-spacing;
+
+  *:nth-child(2) {
+    margin: 0;
+  }
+
+  *:last-child {
+    margin: 0 auto;
+  }
+}

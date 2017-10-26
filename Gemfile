@@ -23,7 +23,7 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem "builder", "~> 3.0"
 
 # Reload the page when changes are made
-gem 'middleman-livereload'
+gem "middleman-livereload", "~> 3.4.3"
 
 # Article Summaries
 gem 'nokogiri'

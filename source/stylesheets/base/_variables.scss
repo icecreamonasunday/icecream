@@ -1,6 +1,7 @@
 // Typography
 $base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$heading-font-family: "Ahkio-regular";
+$base-font-size: 16px;
 
 // Line height
 $base-line-height: 1.5;
@@ -8,10 +9,14 @@ $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
+$large-border-radius: 1.5em;
 $base-spacing: 50px;
 $small-spacing: $base-spacing / 2;
+$smallest-spacing: $small-spacing / 2;
 $large-spacing: $base-spacing * 2;
 $base-z-index: 0;
+$base-border-width: 2px;
+$large-border-width: 4px;
 
 // Colors
 $dark-gray: #333;
@@ -24,7 +29,8 @@ $off-white: #f6f5f2;
 $white: #fff;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: black;
+$base-heading-color: black;
 $action-color: $blue;
 
 // Border
@@ -42,8 +48,11 @@ $focus-outline: $focus-outline-width solid $focus-outline-color;
 $focus-outline-offset: 2px;
 
 // Animations
-$base-duration: 150ms;
+$base-duration: 300ms;
 $base-timing: ease;
 
 // Grid Sizes
 $max-width: 1000px;
+
+// Box Shadows
+$base-box-shadow-color: rgba(223, 214, 204, 0.4);

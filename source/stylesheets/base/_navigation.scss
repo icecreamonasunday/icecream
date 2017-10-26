@@ -1,8 +1,7 @@
 .nav {
-  background-color: $white;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-  height: 225px;
-  padding: 30px 30px;
+  @include clearfix;
+  background-color: $red;
+  padding: 15px $small-spacing;
   position: fixed;
   top: 0;
   transition: height 0.1s ease;
@@ -12,37 +11,45 @@
   .container {
     display: flex;
     flex-direction: row;
-
-    img {
-      transition: height 0.1s ease;
-    }
+    position: relative;
 
     h3 {
       flex: 1 0 0;
     }
 
     ul {
-      align-content: space-evenly;
-      align-items: flex-end;
-      background: url("../images/nav_background.svg") no-repeat top right;
+      @include position(absolute, null 0 20px null);
       display: flex;
-      flex: 2 0 0;
-      justify-content: flex-end;
       list-style: none;
     }
 
-    li {
-      a {
-        color: $blue;
-        font-weight: 400;
-        padding: 3px 20px;
-        text-decoration: none;
-        &:hover {
-          background: url("../images/link-background.svg") no-repeat center center;
-          background-size: contain;
-          color: $white;
-        }
+    a {
+      @include padding(null 0 $smallest-spacing);
+      border-bottom: 0 solid transparent;
+      color: $white;
+      font-weight: 800;
+      margin: 0 $smallest-spacing;
+      text-decoration: none;
+      transition: border-bottom $base-duration;
+
+      &:hover,
+      .nav-link-active {
+        border-bottom: $large-border-width solid $white;
+        padding-bottom: $smallest-spacing;
       }
     }
   }
+}
+
+.blog-title {
+  color: $white;
+  font-size: 87px;
+  line-height: 80px;
+  margin-bottom: 0.3em;
+  transform: rotate(-8deg);
+  transition: font-size 0.1s ease;
+}
+
+.blog-title-first-line {
+  padding-left: 15px;
 }

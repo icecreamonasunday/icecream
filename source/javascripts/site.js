@@ -1,54 +1,38 @@
 function shrinkHeader() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            nav = document.getElementsByClassName('nav')[0];
-            logo = document.getElementsByClassName('logo')[0];
-            if (distanceY < 15) {
-                var navPaddingOffsetCalc = 30 - distanceY;
-            }
-            else {
-                var navPaddingOffsetCalc = 15;
-            }
-            if (distanceY < 138) {
-                var navOffset = 225 - distanceY;
-                nav.setAttribute('style', 'height:' +
-                     navOffset + 'px; padding:' +
-                     navPaddingOffsetCalc + 'px 30px;');
-            }
-            else {
-                nav.setAttribute('style',
-                    'height: 87px; padding: 15px 30px;');
-            }
-            if (distanceY < 103) {
-                var logoOffset = 160 - distanceY;
-                logo.setAttribute('style', 'height:' +
-                     logoOffset + 'px;');
-            }
-            else {
-                logo.setAttribute('style', 'height: 57px;');
-            }
-
-    });
+  window.addEventListener("scroll", function(e) {
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        blogTitle = document.getElementsByClassName("blog-title")[0],
+        blogTitleFirstLine = document.getElementsByClassName(
+      "blog-title-first-line"
+    )[0];
+    if (distanceY < 57) {
+      var titleSizeOffset = 87 - distanceY;
+      blogTitle.setAttribute(
+        "style",
+        "font-size:" +
+        titleSizeOffset +
+        "px; line-height:" +
+        titleSizeOffset +
+        "px;"
+      );
+    } else {
+      blogTitle.setAttribute("style", "font-size: 30px; line-height: 27px;");
+    }
+  });
 }
 window.onload = shrinkHeader();
 
-
-// for every 10 pixels that i scroll (distanceY), make the paddingoffset 1px,
-// as long as the distance i scroll is under 150px
-
-
-
 $(document).ready(function() {
-    $(".fadeIn").each(function() {
-        var src = $(this).data("src");
-        if (src) {
-            var img = new Image();
-            img.style.display = "none";
-            img.onload = function() {
-                $(this).fadeIn(1000);
-            };
-            $(this).append(img);
-            img.src = src;
-        }
-    });
+  $(".fadeIn").each(function() {
+    var src = $(this).data("src");
+    if (src) {
+      var img = new Image();
+      img.style.display = "none";
+      img.onload = function() {
+        $(this).fadeIn(1000);
+      };
+      $(this).append(img);
+      img.src = src;
+    }
+  });
 });

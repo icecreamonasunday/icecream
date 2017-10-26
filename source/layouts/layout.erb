@@ -5,9 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Ice Cream" %></title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <%= stylesheet_link_tag "font-ahkioweb" %>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "jquery-3.2.1" %>
     <%= javascript_include_tag "site" %>
@@ -16,7 +15,7 @@
     <div class="nav">
       <div class="container">
         <% link_to 'http://www.icecreamonasunday.com' do %>
-          <%= tag :img, :src => '/images/blog_title.svg', :class => "logo" %>
+          <h1 class="blog-title"><span class="blog-title-first-line">Ice Cream </span><br />on a Sunday</h1>
         <% end %>
         <ul>
           <li><%= link_to 'Home', '/index.html', :relative => true %></li>
