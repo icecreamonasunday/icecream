@@ -2,18 +2,19 @@
 title: Ice Cream on a Sunday
 ---
 
-<% content_tag :div, :class => "hero" do %>
-  <h1>Recipes!</h1>
-<% end %>
-
-<div class="entries">
-    <% blog.articles.each do |article| %>
-      <div class="entry">
-        <h1>
-          <a href="<%= article.url %>"><%= article.title %></a>
-        </h1>
-
-        <a href="<%= article.url %>">Read more</a>
-      </div>
-    <% end %>
+<div class="latest-posts">
+  <div class="container">
+    <div class="posts">
+      <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...3].each do |article| %>
+        <div class="post">
+          <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
+          <article class="article-link-bracket">
+            <time><%= article.date.strftime('%B %e, %Y') %></time>
+            <h3><%= article.title %> </h3>
+            <a class="button button-secondary" href="<%= article.url %>">Read More</a>
+          </article>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
