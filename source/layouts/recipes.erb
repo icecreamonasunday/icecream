@@ -1,4 +1,28 @@
 <% wrap_layout :layout do %>
-  <%= yield %>
-  <%= tag :img, :src => current_page.data.illustration_tag, :class => 'recipe-illustration' %>
+  <div class="jumbo-feature">
+    <div class="container">
+      <div class="illustration">
+        <img src="<%= current_page.data.expanded_illustration_tag %>" class="fadeIn" />
+      </div>
+      <div class="text-and-description">
+        <article>
+          <img src="images/illustrations/rubber-spatula.png" />
+          <h1>
+            <%= current_page.data.title %>
+          </h1>
+          <time><%= current_page.date.strftime('%b %e, %Y') %></time>
+
+          <%= current_page.summary %>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="recipe-content">
+    <div class="container">
+      <div class="supplementary-content"></div>
+      <div class="ingredients-and-directions">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 <% end %>

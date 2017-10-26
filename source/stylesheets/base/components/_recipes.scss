@@ -13,3 +13,43 @@
 .recipe-illustration {
   width: 300px;
 }
+
+
+
+.recipe-content {
+  @include clearfix;
+  background-color: $white;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+}
+
+.ingredients-and-directions {
+  @include padding($base-spacing null);
+  margin-left: $small-spacing;
+  width: 50%;
+}
+
+.entries_recipes {
+  .jumbo-feature {
+    position: relative;
+  }
+
+  .illustration img {
+    height: 1000px;
+    position: absolute;
+    top: -50px;
+    z-index: 999;
+  }
+
+  .text-and-description {
+    @include padding($base-spacing null);
+    font-size: 1.125em;
+  }
+}
