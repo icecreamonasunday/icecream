@@ -147,6 +147,13 @@ select:focus {
     font-size: 3.1em; }
   .jumbo-feature .container time {
     margin-bottom: 10px; }
+.jumbo-feature .single-entry .illustration-wrapper {
+  position: relative; }
+  .jumbo-feature .single-entry .illustration-wrapper img {
+    height: auto;
+    position: absolute;
+    top: 0;
+    width: 500px; }
 
 .featured-flavors {
   background-color: #fff; }
@@ -214,7 +221,7 @@ select:focus {
       float: left;
       margin-left: 20px; }
       .latest-posts .container .post img {
-        width: 150px; }
+        width: 175px; }
   .latest-posts .section-header {
     margin-bottom: 100px; }
   .latest-posts .decorative-half-box {
