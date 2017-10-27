@@ -269,6 +269,8 @@ select:focus {
       .nav .container a .nav-link-active {
         border-bottom: 4px solid #fff;
         padding-bottom: 12.5px; }
+    .nav .container .blog-title-link:hover {
+      border-bottom: 0; }
 
 .blog-title {
   color: #fff;
@@ -346,7 +348,10 @@ figure {
 .jumbo-feature img {
   height: 645px;
   margin-top: -50px;
+  transition: transform 300ms;
   z-index: 999; }
+  .jumbo-feature img:hover {
+    transform: rotate(-3deg); }
 .jumbo-feature article img {
   height: 100px;
   margin-left: -50px;
@@ -354,7 +359,15 @@ figure {
 
 .featured-flavors img {
   padding: 25px;
+  transition: transform 300ms;
   width: 205px; }
+  .featured-flavors img:hover {
+    transform: rotate(5deg); }
+
+.latest-posts img {
+  transition: transform 300ms; }
+  .latest-posts img:hover {
+    transform: rotate(5deg); }
 
 table {
   border-collapse: collapse;
