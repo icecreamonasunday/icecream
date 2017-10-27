@@ -388,7 +388,6 @@ html {
 
 h1,
 h2,
-h4,
 h6 {
   color: black;
   font-family: "Ahkio-regular";
@@ -409,6 +408,7 @@ h3 {
   font-size: 1.375em; }
 
 h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 1.1em; }
 
 h5 {
