@@ -71,3 +71,9 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+end

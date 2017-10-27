@@ -31,3 +31,4 @@ gem 'nokogiri'
 # Inline SVG Support
 gem 'inline_svg'
 gem 'middleman-sprockets'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
