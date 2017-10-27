@@ -24,7 +24,7 @@
     }
 
     a {
-      @include padding(null 0 $smallest-spacing);
+      // @include padding(null 0 $smallest-spacing);
       border-bottom: 0 solid transparent;
       color: $white;
       font-weight: 800;
@@ -57,4 +57,26 @@
 
 .blog-title-first-line {
   padding-left: 15px;
+}
+
+
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) {
+  .blog-title {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  .nav .container {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav .container .nav-links {
+    padding: $small-spacing 0 $smallest-spacing;
+    position: static;
+  }
 }

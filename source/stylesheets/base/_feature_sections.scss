@@ -12,31 +12,30 @@
 
   .container {
     display: flex;
+  }
 
-    .illustration-wrapper,
-    .text-and-description {
-      @include grid-column(6 of 12);
-      display: flex;
-    }
+  .illustration-wrapper,
+  .text-and-description {
+    @include grid-column(6 of 12);
+    display: flex;
+  }
 
-    .illustration-wrapper {
-      align-items: flex-end;
-      justify-content: flex-end;
-    }
+  .illustration-wrapper {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 
-    .text-and-description {
-      @include grid-column(6 of 12);
-      align-items: center;
-      display: flex;
-    }
+  .text-and-description {
+    align-items: center;
+    display: flex;
+  }
 
-    h1 {
-      font-size: 3.1em;
-    }
+  .feature-title {
+    font-size: 3.1em;
+  }
 
-    time {
-      margin-bottom: 10px;
-    }
+  time {
+    margin-bottom: 10px;
   }
 
   .single-entry .illustration-wrapper {
@@ -47,6 +46,30 @@
       position: absolute;
       top: 0;
       width: 500px;
+    }
+  }
+}
+
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) {
+  .jumbo-feature {
+    .container {
+      position: relative;
+    }
+    .illustration-wrapper {
+      @include position(absolute, 0 0 null null);
+
+      img {
+        height: 200px;
+        z-index: 0;
+      }
+    }
+
+    .text-and-description {
+      margin: 0 $small-spacing $base-spacing;
+      width: 90%;
     }
   }
 }
@@ -68,6 +91,43 @@
     .flavor {
       flex-basis: 0;
     }
+  }
+}
+
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) {
+  .featured-flavors .container {
+    padding: $base-spacing $small-spacing;
+    text-align: left;
+
+    .section-header {
+      text-align: center;
+    }
+
+    .article-link-bracket {
+      padding: 0;
+    }
+  }
+
+  .flavors {
+    flex-direction: column;
+  }
+
+  .flavor {
+    margin: $small-spacing 0;
+  }
+
+  .featured-flavors img,
+  .featured-flavors article {
+    @include grid-column(6 of 12);
+  }
+
+  .featured-flavors .flavor img {
+    margin-left: 0;
+    padding: $small-spacing 0 0;
+    width: calc(50% - 30px);
   }
 }
 
@@ -97,6 +157,27 @@
       height: 500px;
       position: absolute;
       top: -110px;
+    }
+  }
+}
+
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) {
+  .featured-tip .container {
+    @include padding($smallest-spacing $smallest-spacing $base-spacing);
+
+    .title-and-summary,
+    .illustration-wrapper {
+      width: auto;
+    }
+
+    img {
+      height: auto;
+      position: relative;
+      top: 0;
+      width: 80%;
     }
   }
 }
@@ -136,5 +217,33 @@
     height: 400px;
     position: absolute;
     width: 100%;
+  }
+}
+
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px) {
+  .latest-posts .container {
+    padding: 0;
+
+    .section-header {
+      margin: $base-spacing 0 $small-spacing;
+    }
+
+    .posts {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .post {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    img {
+      margin-bottom: -75px;
+      margin-top: $small-spacing;
+    }
   }
 }

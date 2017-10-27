@@ -20,7 +20,11 @@ function shrinkHeader() {
     }
   });
 }
-window.onload = shrinkHeader();
+
+if (window.matchMedia("(min-width: 400px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+  window.onload = shrinkHeader();
+}
 
 $(document).ready(function() {
   $(".fadeIn").each(function() {

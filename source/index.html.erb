@@ -11,7 +11,7 @@ per_page: 4
       </div>
       <div class="text-and-description">
         <article>
-          <h1>
+          <h1 class="feature-title">
             <%= article.title %>
           </h1>
           <time><%= article.date.strftime('%B %e, %Y') %></time>
@@ -76,7 +76,9 @@ per_page: 4
 
       <% page_articles.each_with_index do |article, i| %>
         <div class="post">
-          <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
+          <div class="illustration-wrapper">
+            <img src="<%= article.data.illustration_tag %>" class="fadeIn" />
+          </div>
           <article class="article-link-bracket">
             <time><%= article.date.strftime('%B %e, %Y') %></time>
             <h3><%= article.title %> </h3>
