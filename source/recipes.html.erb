@@ -3,6 +3,7 @@ title: Ice Cream on a Sunday
 ---
 
 <div class="latest-posts">
+  <div class="decorative-half-box"></div>
   <div class="container">
     <div class="posts">
       <% blog.articles.select{ |article| article.data.category == 'recipes' }[0...4].each do |article| %>
@@ -20,6 +21,7 @@ title: Ice Cream on a Sunday
 </div>
 
 <div class="latest-posts">
+  <div class="decorative-half-box"></div>
   <div class="container">
     <div class="posts">
       <% blog.articles.select{ |article| article.data.category == 'recipes' }[4...8].each do |article| %>

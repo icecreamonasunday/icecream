@@ -60,15 +60,13 @@
   }
 }
 
-.drawn-rule {
-  margin-top: 100px;
-}
-
 .featured-tip {
   @include clearfix;
 
   .container {
-    padding: $base-spacing;
+    @include clearfix;
+    @include padding($base-spacing $base-spacing $large-spacing);
+    border-bottom: 1px solid $dark-gray;
 
     .title-and-summary {
       @include grid-column(7 of 12);
@@ -94,10 +92,14 @@
 
 .latest-posts {
   @include clearfix;
+  padding-bottom: $large-spacing;
+  position: relative;
 
   .container {
     padding: 50px;
+    position: relative;
     text-align: center;
+    z-index: 1;
 
     .posts {
       align-items: flex-end;
@@ -108,8 +110,20 @@
       @include grid-column(3 of 12);
 
       img {
-        height: 220px;
+        width: 150px;
       }
     }
+  }
+
+  .section-header {
+    margin-bottom: $large-spacing;
+  }
+
+  .decorative-half-box {
+    background-color: $white;
+    bottom: 0;
+    height: 400px;
+    position: absolute;
+    width: 100%;
   }
 }
