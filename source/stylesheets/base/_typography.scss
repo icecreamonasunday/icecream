@@ -7,7 +7,6 @@ html {
 
 h1,
 h2,
-h4,
 h6 {
   color: $base-heading-color;
   font-family: $heading-font-family;
@@ -32,6 +31,7 @@ h3 {
 }
 
 h4 {
+  font-family: $base-font-family;
   font-size: 1.1em;
 }
 

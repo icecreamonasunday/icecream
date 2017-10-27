@@ -38,6 +38,11 @@
         padding-bottom: $smallest-spacing;
       }
     }
+    .blog-title-link {
+      &:hover {
+        border-bottom: 0;
+      }
+    }
   }
 }
 
