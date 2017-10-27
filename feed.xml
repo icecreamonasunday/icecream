@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2017-10-26T16:11:00-04:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Mint Chip + Brownie</title>
+    <link rel="alternate" href="http://blog.url.com/entries/recipes/mint-chip-brownie/"/>
+    <id>http://blog.url.com/entries/recipes/mint-chip-brownie/</id>
+    <published>2017-10-26T16:11:00-04:00</published>
+    <updated>2017-10-26T22:00:09-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">Roasted banana ice cream: the creamiest of cold creams ever.
+
+
+
+&lt;h3 class="recipe-section-header"&gt;
+    Ingredients
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Brownies&lt;/li&gt;
+    &lt;li&gt;Dark Chocolate&lt;/li&gt;
+    &lt;li&gt;8 egg yolks&lt;/li&gt;
+    &lt;li&gt;2 cups heavy cream&lt;/li&gt;
+    &lt;li&gt;3/4 cups sugar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class="recipe-section-header"&gt;
+    Directions
+&lt;/h3&gt;
+
+&lt;ol&gt;
+    &lt;h4&gt;Custard&lt;/h4&gt;
+    &lt;li&gt;Prepare a large bowl filled with ice water with a smaller bowl sitting in the water. This will be used to cool the cooked custard later.&lt;/li&gt;
+    &lt;li&gt;Combine the milk, heavy cream, and 1/2 cup white sugar in a medium saucepan and heat over low to medium heat.&lt;/li&gt;
+    &lt;li&gt;Meanwhile, whisk together the egg yolks with the remaining 1/4 cup sugar in a separate bowl.&lt;/li&gt;
+    &lt;li&gt;Once steam is coming off of the heated milk/cream in the saucepan, pour a splash into the egg mixture while whisking it continuously.&lt;/li&gt;
+    &lt;li&gt;Continue to add small amounts of the milk/cream to the eggs while whisking until you've added all of it into the separate bowl.&lt;/li&gt;
+    &lt;li&gt;Pour the combined mixture back into the saucepan and set over low to medium heat. Stir continuously with a rubber spatula or wooden spoon.&lt;/li&gt;
+    &lt;li&gt;After stirring for several minutes the custard will start to thicken. Once you can pick up the spatula or spoon and the custard sticks to it, hold it horizontally and run your finger through the custard. If it leaves a trail that stays, your custard is ready.&lt;/li&gt;
+    &lt;li&gt;Take it off the heat and strain the custard into the bowl set over the ice bath. Stir for about 5 minutes until the custard has cooled.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Combine&lt;/h4&gt;
+    &lt;li&gt;Once the custard has cooled, use an immersion blender (or regular blender if you don't have one) to combine the roasted bananas with the custard.&lt;/li&gt;
+    &lt;li&gt;Place the custard in an airtight container and let the it cool completely in the fridge (this is important people!) for at least 4 hours, but preferably overnight.&lt;/li&gt;
+    &lt;li&gt;Once it's ready, churn it according to your ice cream maker's instructions until it's the consistency of soft servce. You can eat it right away for a softer texture, or freeze it for later.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Crema di Riso</title>
+    <link rel="alternate" href="http://blog.url.com/entries/recipes/crema-di-riso/"/>
+    <id>http://blog.url.com/entries/recipes/crema-di-riso/</id>
+    <published>2017-10-25T16:11:00-04:00</published>
+    <updated>2017-10-26T22:00:09-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">Roasted banana ice cream: the creamiest of cold creams ever.
+
+
+
+&lt;h3 class="recipe-section-header"&gt;
+    Ingredients
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Jasmine Rice&lt;/li&gt;
+    &lt;li&gt;Dark Chocolate&lt;/li&gt;
+    &lt;li&gt;8 egg yolks&lt;/li&gt;
+    &lt;li&gt;2 cups heavy cream&lt;/li&gt;
+    &lt;li&gt;3/4 cups sugar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class="recipe-section-header"&gt;
+    Directions
+&lt;/h3&gt;
+
+&lt;ol&gt;
+    &lt;h4&gt;Custard&lt;/h4&gt;
+    &lt;li&gt;Prepare a large bowl filled with ice water with a smaller bowl sitting in the water. This will be used to cool the cooked custard later.&lt;/li&gt;
+    &lt;li&gt;Combine the milk, heavy cream, and 1/2 cup white sugar in a medium saucepan and heat over low to medium heat.&lt;/li&gt;
+    &lt;li&gt;Meanwhile, whisk together the egg yolks with the remaining 1/4 cup sugar in a separate bowl.&lt;/li&gt;
+    &lt;li&gt;Once steam is coming off of the heated milk/cream in the saucepan, pour a splash into the egg mixture while whisking it continuously.&lt;/li&gt;
+    &lt;li&gt;Continue to add small amounts of the milk/cream to the eggs while whisking until you've added all of it into the separate bowl.&lt;/li&gt;
+    &lt;li&gt;Pour the combined mixture back into the saucepan and set over low to medium heat. Stir continuously with a rubber spatula or wooden spoon.&lt;/li&gt;
+    &lt;li&gt;After stirring for several minutes the custard will start to thicken. Once you can pick up the spatula or spoon and the custard sticks to it, hold it horizontally and run your finger through the custard. If it leaves a trail that stays, your custard is ready.&lt;/li&gt;
+    &lt;li&gt;Take it off the heat and strain the custard into the bowl set over the ice bath. Stir for about 5 minutes until the custard has cooled.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Combine&lt;/h4&gt;
+    &lt;li&gt;Once the custard has cooled, use an immersion blender (or regular blender if you don't have one) to combine the roasted bananas with the custard.&lt;/li&gt;
+    &lt;li&gt;Place the custard in an airtight container and let the it cool completely in the fridge (this is important people!) for at least 4 hours, but preferably overnight.&lt;/li&gt;
+    &lt;li&gt;Once it's ready, churn it according to your ice cream maker's instructions until it's the consistency of soft servce. You can eat it right away for a softer texture, or freeze it for later.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Sour Cream &amp; Blueberry Compote</title>
+    <link rel="alternate" href="http://blog.url.com/entries/recipes/sour-cream-blueberry-compote/"/>
+    <id>http://blog.url.com/entries/recipes/sour-cream-blueberry-compote/</id>
+    <published>2017-10-20T16:11:00-04:00</published>
+    <updated>2017-10-26T22:00:09-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">Roasted banana ice cream: the creamiest of cold creams ever.
+
+
+
+&lt;h3 class="recipe-section-header"&gt;
+    Ingredients
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;4 ripe bananas, sliced&lt;/li&gt;
+    &lt;li&gt;Salted butter&lt;/li&gt;
+    &lt;li&gt;Dark brown sugar&lt;/li&gt;
+    &lt;li&gt;8 egg yolks&lt;/li&gt;
+    &lt;li&gt;2 cups heavy cream&lt;/li&gt;
+    &lt;li&gt;3/4 cups sugar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class="recipe-section-header"&gt;
+    Directions
+&lt;/h3&gt;
+
+&lt;ol&gt;
+    &lt;h4&gt;Roasted Bananas&lt;/h4&gt;
+    &lt;li&gt;Preheat the oven to 400F.&lt;/li&gt;
+    &lt;li&gt;Toss the brown sugar, butter, and sliced bananas in a bowl until combined.&lt;/li&gt;
+    &lt;li&gt;Spread them on a baking sheet and put in the oven until caramelized (about 15-20 min).&lt;/li&gt;
+    &lt;li&gt;Take them off the baking sheet and let cool (the melted sugar will make them stick to the pan). They don't have to look pretty because they'll be blended into the ice cream.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Custard&lt;/h4&gt;
+    &lt;li&gt;Prepare a large bowl filled with ice water with a smaller bowl sitting in the water. This will be used to cool the cooked custard later.&lt;/li&gt;
+    &lt;li&gt;Combine the milk, heavy cream, and 1/2 cup white sugar in a medium saucepan and heat over low to medium heat.&lt;/li&gt;
+    &lt;li&gt;Meanwhile, whisk together the egg yolks with the remaining 1/4 cup sugar in a separate bowl.&lt;/li&gt;
+    &lt;li&gt;Once steam is coming off of the heated milk/cream in the saucepan, pour a splash into the egg mixture while whisking it continuously.&lt;/li&gt;
+    &lt;li&gt;Continue to add small amounts of the milk/cream to the eggs while whisking until you've added all of it into the separate bowl.&lt;/li&gt;
+    &lt;li&gt;Pour the combined mixture back into the saucepan and set over low to medium heat. Stir continuously with a rubber spatula or wooden spoon.&lt;/li&gt;
+    &lt;li&gt;After stirring for several minutes the custard will start to thicken. Once you can pick up the spatula or spoon and the custard sticks to it, hold it horizontally and run your finger through the custard. If it leaves a trail that stays, your custard is ready.&lt;/li&gt;
+    &lt;li&gt;Take it off the heat and strain the custard into the bowl set over the ice bath. Stir for about 5 minutes until the custard has cooled.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Combine&lt;/h4&gt;
+    &lt;li&gt;Once the custard has cooled, use an immersion blender (or regular blender if you don't have one) to combine the roasted bananas with the custard.&lt;/li&gt;
+    &lt;li&gt;Place the custard in an airtight container and let the it cool completely in the fridge (this is important people!) for at least 4 hours, but preferably overnight.&lt;/li&gt;
+    &lt;li&gt;Once it's ready, churn it according to your ice cream maker's instructions until it's the consistency of soft servce. You can eat it right away for a softer texture, or freeze it for later.&lt;/li&gt;
+&lt;/ol&gt;</content>
+  </entry>
+  <entry>
+    <title>Roasted Banana</title>
+    <link rel="alternate" href="http://blog.url.com/entries/recipes/roasted-banana/"/>
+    <id>http://blog.url.com/entries/recipes/roasted-banana/</id>
+    <published>2017-10-18T16:11:00-04:00</published>
+    <updated>2017-10-26T22:00:09-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">Roasted banana ice cream: the creamiest of cold creams ever.
+
+
+
+&lt;h3 class="recipe-section-header"&gt;
+    Ingredients
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;4 ripe bananas, sliced&lt;/li&gt;
+    &lt;li&gt;Salted butter&lt;/li&gt;
+    &lt;li&gt;Dark brown sugar&lt;/li&gt;
+    &lt;li&gt;8 egg yolks&lt;/li&gt;
+    &lt;li&gt;2 cups heavy cream&lt;/li&gt;
+    &lt;li&gt;3/4 cups sugar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class="recipe-section-header"&gt;
+    Directions
+&lt;/h3&gt;
+
+&lt;ol&gt;
+    &lt;h4&gt;Roasted Bananas&lt;/h4&gt;
+    &lt;li&gt;Preheat the oven to 400F.&lt;/li&gt;
+    &lt;li&gt;Toss the brown sugar, butter, and sliced bananas in a bowl until combined.&lt;/li&gt;
+    &lt;li&gt;Spread them on a baking sheet and put in the oven until caramelized (about 15-20 min).&lt;/li&gt;
+    &lt;li&gt;Take them off the baking sheet and let cool (the melted sugar will make them stick to the pan). They don't have to look pretty because they'll be blended into the ice cream.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Custard&lt;/h4&gt;
+    &lt;li&gt;Prepare a large bowl filled with ice water with a smaller bowl sitting in the water. This will be used to cool the cooked custard later.&lt;/li&gt;
+    &lt;li&gt;Combine the milk, heavy cream, and 1/2 cup white sugar in a medium saucepan and heat over low to medium heat.&lt;/li&gt;
+    &lt;li&gt;Meanwhile, whisk together the egg yolks with the remaining 1/4 cup sugar in a separate bowl.&lt;/li&gt;
+    &lt;li&gt;Once steam is coming off of the heated milk/cream in the saucepan, pour a splash into the egg mixture while whisking it continuously.&lt;/li&gt;
+    &lt;li&gt;Continue to add small amounts of the milk/cream to the eggs while whisking until you've added all of it into the separate bowl.&lt;/li&gt;
+    &lt;li&gt;Pour the combined mixture back into the saucepan and set over low to medium heat. Stir continuously with a rubber spatula or wooden spoon.&lt;/li&gt;
+    &lt;li&gt;After stirring for several minutes the custard will start to thicken. Once you can pick up the spatula or spoon and the custard sticks to it, hold it horizontally and run your finger through the custard. If it leaves a trail that stays, your custard is ready.&lt;/li&gt;
+    &lt;li&gt;Take it off the heat and strain the custard into the bowl set over the ice bath. Stir for about 5 minutes until the custard has cooled.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Combine&lt;/h4&gt;
+    &lt;li&gt;Once the custard has cooled, use an immersion blender (or regular blender if you don't have one) to combine the roasted bananas with the custard.&lt;/li&gt;
+    &lt;li&gt;Place the custard in an airtight container and let the it cool completely in the fridge (this is important people!) for at least 4 hours, but preferably overnight.&lt;/li&gt;
+    &lt;li&gt;Once it's ready, churn it according to your ice cream maker's instructions until it's the consistency of soft servce. You can eat it right away for a softer texture, or freeze it for later.&lt;/li&gt;
+&lt;/ol&gt;</content>
+  </entry>
+  <entry>
+    <title>Perfect Custard</title>
+    <link rel="alternate" href="http://blog.url.com/entries/tips/how-to-make-perfect-custard/"/>
+    <id>http://blog.url.com/entries/tips/how-to-make-perfect-custard/</id>
+    <published>2017-10-17T16:11:00-04:00</published>
+    <updated>2017-10-26T21:57:37-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+
+
+&lt;h1&gt;Perfect Custard&lt;/h1&gt;
+Here are instructions for making the perfect custard!!
+</content>
+  </entry>
+  <entry>
+    <title>Strawberry</title>
+    <link rel="alternate" href="http://blog.url.com/entries/recipes/strawberry/"/>
+    <id>http://blog.url.com/entries/recipes/strawberry/</id>
+    <published>2017-10-04T17:47:00-04:00</published>
+    <updated>2017-10-26T22:00:09-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">This basic flavor is really only okay if you actually use good strawberriers. Pro tip is to smell them: if they don't smell like anything they won't taste like anything.
+
+
+
+&lt;h3 class="recipe-section-header"&gt;
+    Ingredients
+&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;1 cup awesome strawberries&lt;/li&gt;
+    &lt;li&gt;Lemon juice&lt;/li&gt;
+    &lt;li&gt;Sugar&lt;/li&gt;
+    &lt;li&gt;8 egg yolks&lt;/li&gt;
+    &lt;li&gt;2 cups heavy cream&lt;/li&gt;
+    &lt;li&gt;3/4 cups sugar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class="recipe-section-header"&gt;
+    Directions
+&lt;/h3&gt;
+
+&lt;ol&gt;
+    &lt;h4&gt;Strawberries&lt;/h4&gt;
+    &lt;li&gt;Cut up the strawberries into quarters or so.&lt;/li&gt;
+    &lt;li&gt;Toss them in ___ of the sugar and the lemon juice and let them sit until they're ready to use (or for at least 30 minutes).&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Custard&lt;/h4&gt;
+    &lt;li&gt;Prepare a large bowl filled with ice water with a smaller bowl sitting in the water. This will be used to cool the cooked custard later.&lt;/li&gt;
+    &lt;li&gt;Combine the milk, heavy cream, and 1/2 cup white sugar in a medium saucepan and heat over low to medium heat.&lt;/li&gt;
+    &lt;li&gt;Meanwhile, whisk together the egg yolks with the remaining 1/4 cup sugar in a separate bowl.&lt;/li&gt;
+    &lt;li&gt;Once steam is coming off of the heated milk/cream in the saucepan, pour a splash into the egg mixture while whisking it continuously.&lt;/li&gt;
+    &lt;li&gt;Continue to add small amounts of the milk/cream to the eggs while whisking until you've added all of it into the separate bowl.&lt;/li&gt;
+    &lt;li&gt;Pour the combined mixture back into the saucepan and set over low to medium heat. Stir continuously with a rubber spatula or wooden spoon.&lt;/li&gt;
+    &lt;li&gt;After stirring for several minutes the custard will start to thicken. Once you can pick up the spatula or spoon and the custard sticks to it, hold it horizontally and run your finger through the custard. If it leaves a trail that stays, your custard is ready.&lt;/li&gt;
+    &lt;li&gt;Take it off the heat and strain the custard into the bowl set over the ice bath. Stir for about 5 minutes until the custard has cooled.&lt;/li&gt;
+    &lt;br /&gt;
+    &lt;h4&gt;Combine&lt;/h4&gt;
+    &lt;li&gt;Once the custard has cooled, use an immersion blender (or regular blender if you don't have one) to combine the strawberries with the custard.&lt;/li&gt;
+    &lt;li&gt;Place the custard in an airtight container and let the it cool completely in the fridge (this is important people!) for at least 4 hours, but preferably overnight.&lt;/li&gt;
+    &lt;li&gt;Once it's ready, churn it according to your ice cream maker's instructions until it's the consistency of soft servce. You can eat it right away for a softer texture, or freeze it for later.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+  </entry>
+</feed>
