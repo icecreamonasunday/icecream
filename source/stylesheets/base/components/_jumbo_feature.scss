@@ -1,0 +1,78 @@
+.jumbo-feature {
+  @include clearfix;
+
+  .container {
+    @include grid-media($large-screen-up) {
+      display: flex;
+    }
+    position: relative;
+  }
+
+  .illustration-wrapper,
+  .text-and-description {
+    @include grid-media($large-screen-up) {
+      @include grid-column(6 of 12);
+      display: flex;
+    }
+  }
+
+  .illustration-wrapper {
+    @include grid-media($large-screen-up) {
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative;
+      top: 0;
+    }
+    @include position(absolute, -68px 0 null null);
+  }
+
+  .text-and-description {
+    @include grid-media($large-screen-up) {
+      align-items: center;
+      display: flex;
+    }
+    margin: 0 $small-spacing $base-spacing;
+    width: 90%;
+  }
+
+  .feature-title {
+    font-size: 3.1em;
+  }
+
+  time {
+    margin-bottom: 10px;
+  }
+
+  .single-entry .illustration-wrapper {
+    position: relative;
+
+    img {
+      height: auto;
+      position: absolute;
+      top: 0;
+      width: 500px;
+    }
+  }
+
+  img {
+    @include grid-media($large-screen-up) {
+      float: left;
+      height: 645px;
+      margin-top: -65px;
+      transition: transform $base-duration;
+      z-index: 999;
+
+      &:hover {
+        transform: rotate(-3deg);
+      }
+    }
+    height: 200px;
+    z-index: 0;
+  }
+
+  article img {
+    height: 100px;
+    margin-left: -50px;
+    transform: rotate(75deg);
+  }
+}

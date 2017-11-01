@@ -53,6 +53,18 @@ $base-timing: ease;
 
 // Grid Sizes
 $max-width: 1000px;
+$neat-custom-grid: (
+    columns: 2,
+);
+$large-screen-up: (
+    columns: 12,
+    media: 1000px,
+);
+// Tablet sizing
+$small-screen-up: (
+    columns: 6,
+    media: 667px,
+);
 
 // Box Shadows
 $base-box-shadow-color: rgba(223, 214, 204, 0.4);

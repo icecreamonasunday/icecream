@@ -1,15 +1,10 @@
 @mixin generate-bracket($height) {
+  @include grid-media($large-screen-up) {
+    height: $height;
+    padding: 0;
+  }
+  align-items: center;
   display: flex;
   flex-direction: column;
-  height: $height;
   justify-content: space-between;
-  margin-top: $small-spacing;
-
-  *:nth-child(2) {
-    margin: 0;
-  }
-
-  *:last-child {
-    margin: 0 auto;
-  }
 }

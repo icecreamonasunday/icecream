@@ -1,0 +1,55 @@
+.featured-flavors {
+  @include clearfix;
+  background-color: $white;
+
+  .container {
+    @include grid-media($large-screen-up) {
+      padding: 50px;
+      text-align: center;
+    }
+    padding: $base-spacing $small-spacing;
+    text-align: left;
+
+    .section-header {
+      text-align: center;
+    }
+
+    .flavors {
+      @include grid-media($large-screen-up) {
+        flex-direction: row;
+      }
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .flavor {
+      flex-basis: 0;
+      margin: $small-spacing 0;
+    }
+  }
+
+  img,
+  article {
+    @include grid-column(6 of 12);
+    @include grid-media($large-screen-up) {
+      @include grid-column(12);
+    }
+  }
+
+  img {
+    @include grid-media($large-screen-up) {
+      padding: 25px;
+      width: 205px;
+
+      &:hover {
+        transform: rotate(5deg);
+      }
+    }
+    margin-left: 0;
+    padding: $small-spacing 0 0;
+    transition: transform $base-duration;
+    width: calc(50% - 30px);
+  }
+}

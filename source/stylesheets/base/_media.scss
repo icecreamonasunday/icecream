@@ -1,39 +1,3 @@
 figure {
   margin: 0;
 }
-
-.jumbo-feature {
-  img {
-    height: 645px;
-    margin-top: -65px;
-    transition: transform $base-duration;
-    z-index: 999;
-
-    &:hover {
-      transform: rotate(-3deg);
-    }
-  }
-  article img {
-    height: 100px;
-    margin-left: -50px;
-    transform: rotate(75deg);
-  }
-}
-
-.featured-flavors img {
-  padding: 25px;
-  transition: transform $base-duration;
-  width: 205px;
-
-  &:hover {
-    transform: rotate(5deg);
-  }
-}
-
-.latest-posts img {
-  transition: transform $base-duration;
-
-  &:hover {
-    transform: rotate(5deg);
-  }
-}

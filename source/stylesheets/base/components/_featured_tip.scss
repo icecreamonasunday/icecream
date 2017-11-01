@@ -1,0 +1,45 @@
+.featured-tip {
+  @include clearfix;
+
+  .container {
+    @include clearfix;
+    @include padding($smallest-spacing $small-spacing $base-spacing);
+    @include grid-media($large-screen-up) {
+      @include padding($base-spacing $base-spacing $large-spacing);
+    }
+    border-bottom: 1px solid $dark-gray;
+
+    .title-and-summary {
+      @include grid-media($large-screen-up) {
+        @include grid-column(7 of 12);
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: auto;
+    }
+
+    .illustration-wrapper {
+      @include grid-media($large-screen-up) {
+        @include grid-column(5 of 12);
+      }
+      align-items: center;
+      display: flex;
+      position: relative;
+      width: auto;
+    }
+
+    img {
+      @include grid-media($large-screen-up) {
+        height: 500px;
+        position: absolute;
+        top: -110px;
+        width: auto;
+      }
+      height: auto;
+      position: relative;
+      top: 0;
+      width: 80%;
+    }
+  }
+}

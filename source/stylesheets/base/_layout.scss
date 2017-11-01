@@ -24,8 +24,11 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1000px;
+  @include grid-media($large-screen-up) {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  max-width: 100%;
 }
 
 #main {
@@ -49,14 +52,5 @@ body {
   .link {
     display: flex;
     justify-content: space-around;
-  }
-}
-
-@media only screen
-  and (max-device-width: 640px),
-  only screen and (max-device-width: 667px),
-  only screen and (max-width: 480px) {
-  .container {
-    max-width: 100%;
   }
 }
