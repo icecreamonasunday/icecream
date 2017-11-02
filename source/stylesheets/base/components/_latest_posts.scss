@@ -23,11 +23,12 @@
     }
 
     .post {
+      margin: 0 auto;
+      width: 100%;
+
       @include grid-media($large-screen-up) {
         @include grid-column(3 of 12);
       }
-      margin: 0 auto;
-      width: 100%;
 
       img {
         width: 175px;
@@ -50,7 +51,7 @@
 
   .section-header {
     @include grid-media($large-screen-up) {
-      margin-bottom: $large-spacing;
+      margin: $small-spacing 0 $base-spacing;
     }
     margin: $base-spacing 0 $small-spacing;
   }
