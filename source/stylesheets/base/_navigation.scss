@@ -24,7 +24,7 @@
     }
 
     a {
-      @include padding(null 0 $smallest-spacing);
+      // @include padding(null 0 $smallest-spacing);
       border-bottom: 0 solid transparent;
       color: $white;
       font-weight: 800;
