@@ -256,9 +256,6 @@ select:focus {
       display: flex;
       list-style: none; }
     .nav .container a {
-      padding-right: 0;
-      padding-bottom: 12.5px;
-      padding-left: 0;
       border-bottom: 0 solid transparent;
       color: #fff;
       font-weight: 800;
